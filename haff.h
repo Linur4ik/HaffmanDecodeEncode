@@ -7,7 +7,7 @@
 #include <fstream>
 #include <bitset>
 using namespace std;
-void show_vector(vector<int>& a)
+void show_vector(vector<bool>& a)
 {
     for (vector<int>::iterator it = a.begin(); it != a.end(); ++it)   cout << *it;
 }
@@ -50,7 +50,7 @@ Uzel :: Uzel(Uzel* L, Uzel* R)
 }
 
 
-vector<int>code;
+vector<bool>code;
 class Haffman
 {
 public:
@@ -62,11 +62,11 @@ public:
     {
         return l->key < r->key;
     };
-    void Tree(Uzel*, map<char, vector<int>>&);
+    void Tree(Uzel*, map<char, vector<bool>>&);
     unsigned long long Cap(ifstream&);
 };
 
-void Haffman :: Tree(Uzel* Head, map<char, vector<int>>& Table)
+void Haffman :: Tree(Uzel* Head, map<char, vector<bool>>& Table)
 {
     if (Head->left)
     {
