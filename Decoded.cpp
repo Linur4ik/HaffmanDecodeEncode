@@ -16,7 +16,7 @@ int main()
 
 
     Haffman a;
-    map<char, vector<int>> Table;
+    map<char, vector<bool>> Table;
     unsigned long long len = a.Cap(In);
     Uzel* Head = a.CreateList();
     a.Tree(Head, Table);
