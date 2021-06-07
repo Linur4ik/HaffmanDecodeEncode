@@ -14,7 +14,7 @@ int main()
         return 0;
     }
     Haffman a;
-    map<char, vector<int>> Table;
+    map<char, vector<bool>> Table;
     a.CreateMap(In);
     a.Tree(a.CreateList(), Table);
     char s, ptr = 0;
