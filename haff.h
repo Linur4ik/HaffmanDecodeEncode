@@ -9,7 +9,7 @@
 using namespace std;
 void show_vector(vector<bool>& a)
 {
-    for (vector<int>::iterator it = a.begin(); it != a.end(); ++it)   cout << *it;
+    for (vector<bool>::iterator it = a.begin(); it != a.end(); ++it)   cout << *it;
 }
 class Uzel
 {
