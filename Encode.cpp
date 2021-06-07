@@ -29,7 +29,7 @@ int main()
 
     while (In.get(s)) // Запись кода
     {
-        vector<int> Tr = Table[s];
+        vector<bool> Tr = Table[s];
         //show_vector(Tr);
         for (int i = 0; i < Tr.size(); i++)
         {
